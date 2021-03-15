@@ -48,18 +48,25 @@ function validate(){
     document.getElementById('sub').style.background="green";
     document.getElementById('sub').style.color="white";
     document.getElementById('sub').value="Submit Now";
+    document.getElementById('social').style.background="green";
+   
+
+    window.setTimeout(function(){
+  
+      window.location.reload();
+    },3000)
   }
 }
 
 const validateName=(nameVal)=>{
   if(nameVal===''){
     document.getElementById('name').style.border="3px solid red";
-    document.getElementById('name').placeholder="Name must be long";
+    document.getElementById('name').placeholder="Invalid Name";
     return false;
   }
   else if(nameVal.length<3 || nameVal.length>30){
     document.getElementById('name').style.border="3px solid red";
-    document.getElementById('name').placeholder="You may enter too sor or long name";
+    document.getElementById('name').placeholder="Name too short or long";
     return false;
   }
   else{
@@ -75,11 +82,11 @@ const validateEmail=(emailVal)=>{
 const regex=new RegExp('^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$')
 if(regex.test(emailVal)){
   document.getElementById('email').style.border="3px solid green";
-  console.log('ok')
   return true;
 }
 else{
   document.getElementById('email').style.border="3px solid red";
+  document.getElementById('email').placeholder="Invalid Emai Id";
   return false;
 }
 }
@@ -91,6 +98,7 @@ const validateProject=(projectVal)=>{
   }
   else{
     document.getElementById('project').style.border="3px solid red";
+    document.getElementById('project').placeholder="Enter Valid project name";
     return false;
   }
 }
@@ -101,6 +109,7 @@ const validateContact=(contactVal)=>{
   }
   else{
     document.getElementById('contact').style.border="3px solid red";
+    document.getElementById('contact').placeholder="Invalid Contact No";
     return false;
   }
 }
@@ -112,6 +121,7 @@ if(textVal.length>30 && textVal.length<100){
 }
 else{
   document.getElementById('textval').style.border="3px solid red";
+  document.getElementById('textval').innerText="Space Can,t Blank";
     return false;
 }
 }
