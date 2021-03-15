@@ -24,7 +24,7 @@
       </ul>
     </div>
     <div class="myinfo">
-      <div class="social">
+      <div class="social" id="social">
         <div class="icon">
           <a href="" class="fab fa-linkedin-in"></a>
           <a href="" class="fab fa-instagram"></a>
@@ -180,20 +180,20 @@
 <div class="get">
   <h3>Get In Touch</h3>
 </div>
-<div class="form">
+<div class="form" id="form">
   <div class="most">
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" class="namecolor" id="email" placeholder="Email" >
   </div>
   <div class="further">
-    <input type="number" placeholder="Contact No">
-    <input type="text" placeholder="Project Name">
+    <input type="number"id="contact"placeholder="Contact No">
+    <input type="text"id="project" placeholder="Project Name">
   </div>
    <div class="textarea">
-    <textarea rows="10">Leve Message Here......</textarea>
+    <textarea rows="10" id="textval">Leve Message Here......</textarea>
    </div>
    <div class="submit">
-     <input type="button" value="Submit">
+     <input type="submit" value="Submit" id="sub" onclick="validate()">
    </div>
   </div>
 
