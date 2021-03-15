@@ -1,275 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="menu" id="show">
+      <div class="cross" id="cut" onclick="off()">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul>
+        <li><a href="#about" onclick="done()" class="list-item">About Me</a></li>
+        <li><a href="#certificate" onclick="done()" class="list-item">Certificate</a></li>
+        <li><a href="#edu"onclick="done()" class="list-item">Education</a></li>
+        <li><a href="#achieve" onclick="done()" class="list-item">Achievement</a></li>
+        <li><a href="#skill" onclick="done()" class="list-item">Skill</a></li>
+        <li><a href="#contact"onclick="done()" class="list-item">Contact</a></li>
+      </ul>
+    </div>
+    <div class="myinfo">
+      <div class="social">
+        <div class="icon">
+          <a href="" class="fab fa-linkedin-in"></a>
+          <a href="" class="fab fa-instagram"></a>
+          <a href="https://api.whatsapp.com/send?phone=918506911853" class="fab fa-whatsapp"></a>
+        </div>
+        <div class="hamburges" id="ham" onclick="on()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--About Me-->
+  <div class="info">
+    <div class='name'>
+      <h4 >Durgesh Tiwari</h4>
+      <p class="name-info">MERN stack Enthusiast || Python Developer|| 6 star@Hackerrank& 3 star@Codechef||Competitive Programmer</p>
+    </div>
+    <div class="image">
+      <img src="image/1.jpeg" alt="">
+    </div>
+    <div class="my-text" id="about">
+      <h2 class="head" id="about">About</h2>
+      <p>MY BACKGROUND</p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+       Cum quas nemo animi dolore blanditiis esse pariatur possimus, 
+       adipisci minima. Repellendus commodi dolor nemo
+        at non voluptatibus natus temporibus dignissimos rerum?
+         Eligendi iure consequuntur labore animi maxime temporibus 
+         nihil dolorem. Tenetur placeat, consequuntur ipsam minus 
+         quisquam minima iste. Perferendis, ullam possimus?
+    </div>
+  </div>
+<!--certificate-->
+<div class="epskill" id="certificate">
+  <h3>Certificate</h3>
+</div>
+<div class="main-certi">
+  <div class="certi">
+    <a href="https://drive.google.com/file/d/1zIdPqyumSoWKnxP78Y7w_b2nLlZRQt5x/view?usp=sharing" class="certi-du">
+     <img src="image/ac1.png" alt="">
+    </a>
+  </div>
+  <div class="certi">
+    <a href="https://drive.google.com/file/d/1rb_wTM5hjS5Q3GNkGqlrBzypDqDR3YL2/view?usp=sharing" class="certi-du">
+     <img src="image/ac2.png" alt="">
+    </a>
+  </div>
+  <div class="certi">
+    <a href="https://drive.google.com/file/d/1ZIvwLbjEfmP9l0hzHEik-JYeHrPvWSJi/view?usp=sharing" class="certi-du">
+     <img src="image/ac3.png" alt="">
+    </a>
+  </div>
+  <div class="certi">
+    <a href="https://drive.google.com/file/d/1U_Ua7nnIp-Do5BnsPcR8L8s6YAHGeW66/view?usp=sharing" class="certi-du">
+     <img src="image/ac4.png" alt="">
+    </a>
+  </div>
+  <div class="certi">
+    <a href="https://drive.google.com/file/d/1CshNd9jPUAOxHT0I-adLIknqskNRUFLS/view?usp=sharing" class="certi-du">
+     <img src="image/ac5.png" alt="">
+    </a>
+  </div>
+</div>
+<!--certificate-->
 
-        <!-- ===== SWIPER CSS ===== -->
-        <link rel="stylesheet" href="">
-        
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
- 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+<!--Education-->
+<div class="epskill" id="edu">
+  <h3>Education</h3>
+</div>
+<div class="edu">
+  <div class="college-info">
+    <img src="image/college.jfif" alt="">
+    <p>Thakur college of Engineering and Technology</p>
+    <p>2018-2022</p>
+    <strong>Current CGPA-9.3</strong>
+  </div>
+  <div class="school">
+    <img src="image/school.jfif" alt="">
+    <p>Intermideate+2 Utter Pradesh Board</p>
+    <strong>Percentage-81 with Distinction in PCM</strong>
+  </div>
+</div>
+<!--Education-->
 
-        <title>Portfolio Personal Complete</title>
-    </head>
-    <body>
-        <!--===== SCROLL TOP =====-->
-        <a href="#" class="scrolltop show-scroll " id="scroll-top">
-            <i class='bx bx-chevron-up scroll_icon' ></i>
-        </a>
-        
-        <!--===== HEADER =====-->
-        <header class="l-header scroll-header" id="header">
-            <nav class="nav bd-container">
-                <a href="" class="nav_logo">Durgesh Tiwari</a>
-                <div class="nav_menu" id="nav-menu">
-                    <ul class="nav_list">
-                        <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
-                        <li class="nav_item"><a href="#about" class="nav_link">About Me</a></li>
-                        <li class="nav_item"><a href="#education" class="nav_link">Education</a></li>
-                        <li class="nav_item"><a href="#skill" class="nav_link">Skill</a></li>
-                        <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
+<!--Achievement-->
+<div class="epskill" id="achieve">
+  <h3>Achievement</h3>
+</div>
+<div class="ach-info">
+  <div class="achieve">
+    <h4>Codechef Vice-president@TCET</h4>
+    <p>Conduct so many contest along with my team
+    during my college event and also help the team to make the contest question.
+    </p>
+  </div>
+  <div class="achieve">
+    <h4>Jee Main 2018 & Mh-cet</h4>
+    <p>get 50,000 rank in jee main 2018
+       get 130/200 in mh-cet 2018
+    </p>
+  </div>
+  <div class="achieve">
+    <h4>Intermediate</h4>
+    <p>Distinction in PCM with 89% marks UP BOARD@2016
+    </p>
+  </div>
+</div>
 
-        </header>
+<!--Achievement-->
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home_container bd-container bd-grid">
-                    <div class="home_data">
-                        <span class="home_greeting">
-                            Hello ,My name is
-                        </span>
-                        <h1 class="home_name">Durgseh Tiwari</h1>
-                        <span class="home_profession">Web Devloper</span>
-                        <a download="" href="#" class="button button-light">Download Cv</a>
-                    </div>
-                        <div class="home_social">
-                            <a href="" class="home_social-icon"><i class='bx bxl-facebook-square'></i></a>
-                            <a href="" class="home_social-icon"><i class='bx bxl-instagram'></i></a>
-                            <a href="" class="home_social-icon"><i class='bx bxl-twitter'></i></a>
-                        </div>
-                        <div class="home_img">
-                            <img src="assets/img/blackme.jpeg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!--===== ABOUT =====-->
-            <section class="about section bd-container" id="about">
-                <span class="section-subtitle">My history</span>
-                <h2 class="section-title">About Me</h2>
-                <div class="about_container bd-grid">
-                    <div class="about_data bd-grid">
-                        <p class="about_description"><span>I am looking forward to the field of web development very fascinated to Developer great UI and front end development </span></p>
-                        <div>
-                            <span class="about_number">B.E</span>
-                             <span class="about_achievement">Thakur college of Engineering& Technology</span>
-                        </div>
-                        <div>
-                            <span class="about_number">Codechef Representitive </span>
-                             <span class="about_achievement">Thakur college of Engineering</span>
-                        </div>
-                    </div>
-                    <img src="assets/img/aboutme.jpeg" alt="" class="about_img">
-                </div>
-            </section>
+<!--Skill-->
+<div class="epskill" id="skill">
+  <h3>Skill</h3>
+</div>
+<div class="skill">
+  <div class="sk1">
+    <i class="fab fa-python"></i>
+    <p>Python Developer </p>
+  </div>
+  <div class="sk2">
+    <i class="fas fa-cubes"></i>
+    <p>C++</p>
+  </div>
+  <div class="sk3">
+    <i class="fab fa-node"></i>
+    <p>Node.JS</p>
+  </div>
+  <div class="sk4">
+    <i class="fab fa-react"></i>
+    <p>React.JS</p>
+  </div>
+  <div class="sk5">
+    <i class="fab fa-html5"></i>
+    <p>HTML</p>
+  </div>
+  <div class="sk6">
+    <i class="fab fa-css3"></i>
+    <p>CSS</p>
+  </div>
+  <div class="sk7">
+    <i class="fas fa-square-root-alt"></i>
+    <p>Advance Mathematics</p>
+  </div>
+  <div class="sk8">
+    <i class="fas fa-globe-americas"></i>
+    <p>Advance Level Physics </p>
+  </div>
+</div>
+<!--Skill-->
 
-            <!--===== QUALIFICATION =====-->
-            <section class="qualification section bd-container" id="education">
-                <span class="section-subtitle">Eduacation</span>
-                <h2 class="section-title">Qualification</h2>
-                <div class="qualification_container bd-grid">
-                    <div class="qualification_content">
-                        <h2 class="qualification_title">
-                            <i class="bx bxs-edit-alt qualification_title-icon">Qualifcation</i>
-                        </h2>
-                        <div class="bd-grid">
-                            <div class="qualification_data">
-                                <h3 class="qualification_area">High School</h3>
-                                <div class="qualification_box">
-                                    <span class="qualification_work">
-                                        <i class="bx bxs-credit-card-front qualification_icon">Up Board</i>
-                                    </span>
-                                    <span class="qualification_work">
-                                        <i class="bx bx-calender-alt qualification_icon"></i>
-                                        80% Mark
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="qualification_data">
-                                <h3 class="qualification_area">Higher Secondary</h3>
-                                <div class="qualification_box">
-                                    <span class="qualification_work">
-                                        <i class="bx bxs-credit-card-front qualification_icon"></i>
-                                        Up Board
-                                    </span>
-                                    <span class="qualification_work">
-                                        <i class="bx bxs-credit-card-fornt qualification_icon"></i>
-                                        80% MarK with distinction in PCM
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="qualification_data">
-                                <h3 class="qualification_area">MH CET</h3>
-                                <div class="qualification_box">
-                                    <span class="qualification_work">
-                                        <i class="bx bxs-edit-alt qualification_icon"></i>
-                                        Mumbai
-                                    </span>
-                                    <span class="qualification_work">
-                                        <i class="bx bxs-credit-card-fornt qualification_icon"></i>
-                                        Mark:135/200
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="qualification_data">
-                                <h3 class="qualification_area">B.E</h3>
-                                <div class="qualification_box">
-                                    <span class="qualification_work">
-                                        <i class="bx bxs-edit-alt qualification_icon"></i>
-                                        TCET Mumbai
-                                    </span>
-                                    <span class="qualification_work">
-                                        <i class="bx bxs-credit-card-fornt qualification_icon"></i>
-                                        grade:9.3 persuing
-                                    </span>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </section>
+<!--Contact Me-->
+<div class="get">
+  <h3>Get In Touch</h3>
+</div>
+<div class="form">
+  <div class="most">
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+  </div>
+  <div class="further">
+    <input type="number" placeholder="Contact No">
+    <input type="text" placeholder="Project Name">
+  </div>
+   <div class="textarea">
+    <textarea rows="10">Leve Message Here......</textarea>
+   </div>
+   <div class="submit">
+     <input type="button" value="Submit">
+   </div>
+  </div>
 
-            <!--===== SERVICES =====-->
-            <section class="services section bd-container" id="skill">
-                <span class="section-subtitle">What My skill</span>
-                <h2 class="section-title">SKILL</h2>
-                <div class="services_container bd-grid">
-                    <div class="services_data">
-                        <i class='bx bxs-brain services-icon'></i>
-                        <h3 class="services_title">Competitive Coding</h3>
-                        <p class="services_description">3 star at codechef and 6 star at hackerrank</p>
-                        <a href="#" class="button">Know More</a>
-                    </div>
-                    <div class="services_data">
-                        <i class='bx bxl-python services-icon'></i>
-                        <h3 class="services_title">Python Devloper</h3>
-                        <p class="services_description">Working To make GA More efficient</p>
-                        <a href="#" class="button">Know More</a>
-                    </div>
-                    <div class="services_data">
-                        <i class='bx bxl-nodejs services-icon'></i>
-                        <h3 class="services_title">NodeJs Devloper</h3>
-                        <p class="services_description">Using Node js as serverside language for my project</p>
-                        <a href="#" class="button">Know More</a>
-                    </div>
-                </div>
-                </section>
-            
-            <!--===== PROJECT IN MIND =====-->
-            <section class="project section bd-container">
-                <div class="project_container bd-grid">
-                    <div class="project_data">
-                        <i class='bx bx-chat project_icon' ></i>
-                  
-                    <div>
-                    <h2 class="project_title">Project in Mind</h2>
-                    <p class="project_description">Hire me to carry out the following projects.</p>
-                   </div>
-                   <div>
-                       <a href="#" class="button button-white">Hire Me</a>
-                   </div>
-                  </div>
-                </div>
-                </section>
-
-            <!--===== PORTFOLIO =====-->
-            
-
-            <!--===== TESTIMONIAL =====-->
-            
-
-            <!--===== CONTACTME =====-->
-            <section class="contact section bd-container" id="contact">
-                <span class="section-subtitle">For Project</span>
-                <h2 class="section-title">Contact Me</h2>
-                <div class="contact_container bd-grid">
-                    <div class="contact_box">
-                        <i class='bx bxs-home contact_icon'></i>
-                        <h3 class="contact_title">Location</h3>
-                        <span class="contact_description">Thakur Complex Mumbai 400101 India</span>
-                    </div>
-                    <div class="contact_box">
-                        <i class='bx bxs-envelope contact_icon'></i>
-                        <h3 class="contact_title">Email</h3>
-                        <span class="contact_description">durgesh.tiw98@gmail.com</span>
-                    </div>
-                    <div class="contact_box">
-                        <i class='bx bxs-phone contact_icon'></i>
-                        <h3 class="contact_title">Phone</h3>
-                        <span class="contact_description">8506911853</span>
-                    </div>
-                    <div class="contact_box">
-                        <i class='bx bxs-chat contact_icon'></i>
-                        <h3 class="contact_title">Chat</h3>
-                        <div class="contact_social">
-                            <a href="#" class="contact_social"><i class="bx bxl-whatsapp-square"></i></a>
-                            <a href="#" class="contact_social"><i class="bx bxl-telegram"></i></a>
-                            <a href="#" class="contact_social"><i class="bx bxl-messenger"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <form action="" class="contact_form">
-                    <div class="contact_inputs">
-                   <input type="text" placeholder="Name"class="contact_input">
-                   <input type="text" placeholder="Email"class="contact_input">
-                    </div>
-                    <div class="contact_inputs">
-                        <input type="text" placeholder="Project"class="contact_input">
-                        <input type="text" placeholder="Number"class="contact_input">
-                         </div>
-                    <textarea name="" id="" cols="0" rows="7" placeholder="Message"   class="contact_input"></textarea>
-                    <input type="submit" value="Send Message"  class="button contact_button">
-                </form>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <div class="footer_container bd-container">
-                <h1 class="footer_title">Durgesh Tiwari</h1>
-                <p class="footer_description">I am Durgesh Tiwari Persuing B.E In Information Technology from TCET(Mumbai)</p>
-                <div class="footer_social">
-                    <a href="" class="footer_link"><i class="bx bxl-linkedin"></i></a>
-                    <a href="" class="footer_link"><i class="bx bxl-github"></i></a>
-                    <a href="" class="footer_link"><i class="bx bxl-dribbble"></i></a>
-                </div>
-                <p class="footer_copy">&#169;2020 durgesh.All right reserved</p>
-            </div>
-        </footer>
-        
-        <!-- ===== MIXITUP FILTER ===== -->
-        <script src=""></script>
-        
-        <!-- ===== SWIPER JS ===== -->
-        <script src=""></script>
-        
-        <!-- ===== GSAP ===== -->
-        <script src="assets/js/gsap.min.js"></script>
-        
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+<!--Contact Me-->
+<div class="add" id="contact">
+  <h3>Address</h3>
+</div>
+<div class="footer">
+  <div class="social-media">
+    <i class="fab fa-linkedin-in"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-codepen"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-reddit-alien"></i>
+  </div>
+  <div class="address">
+    <div class="email-add">
+      <i class="fas fa-envelope"></i>
+     <a href="" class="email-mera">durgesh.tiw98@gmail.com</a>
+    </div>
+    <div class="home">
+      <i class="fas fa-map-marker-alt"></i>
+      <p>Thakur complex Kandivali East Mumbai 400101</p>
+    </div>
+  </div>
+  <div class="copy-right">
+  <i class="far fa-copyright" aria-hidden="true"><a>Copyright Durgesh 2020</a></i>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
 </html>
