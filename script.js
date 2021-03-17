@@ -1,3 +1,4 @@
+
 function on(){
   document.getElementById("show").style.display="block";
   document.getElementById("ham").style.display="none";
@@ -45,24 +46,34 @@ btn.addEventListener('click',()=>{
   const value4=validateContact(contactVal);
   const value5=validateText(textVal);
  if(value1&&value2&&value3&&value4&&value5){
-   window.setTimeout(()=>{
-     let input=document.querySelectorAll('input');
-     input.forEach(input=>input.value='');
-     document.getElementById('sub').style.background="green";
-     document.getElementById('sub').style.color="white";
-     document.getElementById('sub').value="Submitted";
-     document.getElementById('social').style.background="green";
-   },1000);
-   window.setTimeout(function(){
-  
-    window.location.reload();
-   },4000)
- }
- else{
-  document.getElementById('sub').style.background="red";
-  document.getElementById('sub').style.color="white";
+  var tempParams={
+    from_name:nameVal,
+    email_id:emailVal,
+    contact:contactVal,
+    project:projectVal,
+    message:textVal
+  }
+  const val=sendMail(tempParams);
+  if (val){
+    // window.setTimeout(()=>{
+      let input=document.querySelectorAll('input');
+      let text=document.getElementById('textval');
+      input.forEach(input=>input.value='');
+      text.value=''
+    // },6000);
+  }
 
-  document.getElementById('sub').value="Validation Failed";
+ }//this
+ else{
+  let input=document.querySelectorAll('input');
+  let text=document.getElementById('textval');
+  input.forEach(input=>input.value='');
+  text.value=''
+  Swal.fire({
+    icon: 'error',
+    title: 'Validation Failed....',
+    text: `Email not send due to validation Failed`
+  });
  }
 
 });
@@ -70,13 +81,11 @@ btn.addEventListener('click',()=>{
 const validateName=(nameVal)=>{
   if(nameVal===''){
     document.getElementById('name').style.border="2px solid red";
-    document.getElementById('name').placeholder="Invalid Name";
     document.getElementById('name').style.color="red";
     return false;
   }
   else if(nameVal.length<5 || nameVal.length>30){
     document.getElementById('name').style.border="2px solid red";
-    document.getElementById('name').placeholder="Name too short or long";
     document.getElementById('name').style.color="red";
     return false;
   }
@@ -90,20 +99,19 @@ const validateName=(nameVal)=>{
 const validateEmail=(emailVal)=>{
 const regex=new RegExp('^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$')
 if(regex.test(emailVal)){
-  document.getElementById('email').style.border="2px solid green";
   document.getElementById('email').style.color="green";
+  document.getElementById('email').style.border="2px solid green";
   return true;
 }
 else{
   document.getElementById('email').style.color="red";
   document.getElementById('email').style.border="2px solid red";
-  document.getElementById('email').placeholder="Invalid Emai Id";
   return false;
 }
 }
 
 const validateProject=(projectVal)=>{
-  if(projectVal.length>15 && projectVal.length<50){
+  if(projectVal.length>10 && projectVal.length<50){
     document.getElementById('project').style.color="green";
     document.getElementById('project').style.border="2px solid green";
     return true;
@@ -111,7 +119,6 @@ const validateProject=(projectVal)=>{
   else{
     document.getElementById('project').style.color="red";
     document.getElementById('project').style.border="2px solid red";
-    document.getElementById('project').placeholder="Enter Valid project name";
     return false;
   }
 }
@@ -124,13 +131,12 @@ const validateContact=(contactVal)=>{
   else{
     document.getElementById('contact').style.color="red";
     document.getElementById('contact').style.border="2px solid red";
-    document.getElementById('contact').placeholder="Invalid Contact No";
     return false;
   }
 }
 
 const validateText=(textVal)=>{
-if(textVal.length>30 && textVal.length<200){
+if(textVal.length>30 && textVal.length<300){
   document.getElementById('textval').style.color="green";
   document.getElementById('textval').style.border="2px solid green";
     return true;
@@ -138,7 +144,29 @@ if(textVal.length>30 && textVal.length<200){
 else{
   document.getElementById('textval').style.color="red";
   document.getElementById('textval').style.border="2px solid red";
-  document.getElementById('textval').innerText="Space Can,t Blank";
     return false;
 }
 }
+
+function sendMail(params){
+  emailjs.send('service_rrba16d','template_u7g8bbp',params)
+  .then(function(res){
+    Swal.fire({
+      icon: 'success',
+      title: `Mail Send successfully....`,
+      text: 'I will contact you sortly.......'
+    })
+    window.setTimeout(()=>{
+      location.reload();
+    },8000);
+  })
+  .catch(()=>{
+    Swal.fire({
+      icon: 'error',
+      title: 'Something Failed....',
+      text: 'Mail could not be send yet try again'
+    });
+    return false;
+  });
+  
+ }

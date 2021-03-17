@@ -171,11 +171,14 @@ html{
   height:70px;
   width:99%;
   margin-top:20px;
-  font-size:1.2rem;
+  font-size:1.1rem;
   color:black;
   border:2px solid gold;
   font-family: 'Titillium Web';
   border-radius:5px;
+}
+.form textarea{
+  height:150px;
 }
 .form{
   display:grid;
@@ -192,8 +195,8 @@ html{
   height:200px;
 }
 
-.submit input{
-  height:50px;
+.submit button{
+  height:60px;
   width:100%;
   cursor:pointer;
   font-size:1.8rem;
@@ -202,7 +205,7 @@ html{
   margin-bottom:10px;
   font-family: 'Titillium Web';
 }
-.submit input:hover{
+.submit button:hover{
   background-color:green;
   color:red;
 }
@@ -394,7 +397,7 @@ grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     }
    /* Get int touch */
    
-   .submit input{
+   .submit button{
     height:80px;
   }
  .most,.further{
