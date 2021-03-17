@@ -74,7 +74,6 @@ html{
   background:#eee;
   height:80px;
   width:100%;
-
   font-size:40px;
   box-shadow:1px 1px 10px 3px black;
 }
@@ -256,6 +255,12 @@ grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
    width:100%;
    cursor:pointer;
  }
+ .social-media a{
+   text-decoration:none;
+   color:gold;
+   font-size:2.5rem;
+
+ }
  /* Education */
  .edu{
    display:grid;
@@ -337,7 +342,7 @@ grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
   .email-add a{
     font-size:2.5rem;
   }
-  .social-media i{
+  .social-media a{
    font-size:4rem;
   }
   .email-add i{
