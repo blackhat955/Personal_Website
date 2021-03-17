@@ -175,6 +175,7 @@ html{
   color:black;
   border:2px solid gold;
   font-family: 'Titillium Web';
+  border-radius:5px;
 }
 .form{
   display:grid;
@@ -187,9 +188,10 @@ html{
   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
   grid-gap:5px;
 }
-textarea{
-  height:100px;
+.textarea input{
+  height:200px;
 }
+
 .submit input{
   height:50px;
   width:100%;
