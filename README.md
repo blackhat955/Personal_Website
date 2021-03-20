@@ -2,7 +2,7 @@
 
 [Visit MY Website](https://blackhat955.github.io/My-Information-/)
 
-! [This is awesome](https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.vexels.com%2Fmedia%2Fusers%2F3%2F145908%2Fpreview2%2F52eabf633ca6414e60a7677b0b917d92-male-avatar-maker.jpg&imgrefurl=https%3A%2F%2Fwww.vexels.com%2Feditables%2Fpreview%2F145908%2Fmale-avatar-maker&tbnid=gnzAlFgJH0wErM&vet=12ahUKEwjll4qW97_vAhXVGXIKHSdpDOcQMygUegUIARCBAg..i&docid=z2wdIE_l5xR7vM&w=618&h=570&q=avatar%20image&ved=2ahUKEwjll4qW97_vAhXVGXIKHSdpDOcQMygUegUIARCBAg)
+! [This is awesome](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr830UoalFA6OmJf84E-Ivp53PVkdYZsuz_A&usqp=CAU)
 
 ## About Me:
 
