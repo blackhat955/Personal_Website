@@ -154,7 +154,7 @@ function sendMail(params){
     Swal.fire({
       icon: 'success',
       title: `Mail Send successfully....`,
-      text: 'I will contact you sortly.......'
+      text: 'I will contact you shortly.......'
     })
     window.setTimeout(()=>{
       location.reload();
