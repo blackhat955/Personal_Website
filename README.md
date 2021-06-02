@@ -10,8 +10,11 @@
 
 ### Some Images of Hosted Project:
 
-![s1](https://github.com/blackhat955/BMI_calculator/blob/main/image/Screenshot_1621251159.png) <br><br>
-![s2](https://github.com/blackhat955/BMI_calculator/blob/main/image/Screenshot_1621333426.png)  <br><br>
+![s1](https://github.com/blackhat955/My-Information-/blob/main/imagemyInfo/imagemyInfo1.jpeg) <br><br>
+![s2](https://github.com/blackhat955/My-Information-/blob/main/imagemyInfo/imagemyInfo2.jpeg)  <br><br>
+![s3](https://github.com/blackhat955/My-Information-/blob/main/imagemyInfo/imagemyInfo3.jpeg)  <br><br>
+![s4](https://github.com/blackhat955/My-Information-/blob/main/imagemyInfo/imagemyInfo4.jpeg)  <br><br>
+
 
 Use `for` loop
 
