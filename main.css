@@ -132,13 +132,13 @@ html{
 .skill{
   display:grid;
   margin-top:40px;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
   grid-gap:10px;
   background:#eee;
   align-items:center;
 }
 .skill img{
-  height:100px;
+  height:50px;
   width:100%;
 }
 .epskill,.add,.get{
