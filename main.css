@@ -129,13 +129,6 @@ html{
 }
 
 /* Skill */
-.sk1,.sk2,.sk3,.sk4,.sk5,.sk6,.sk7,.sk8{
-  background:#0d3b66;
-  color:white;
-  text-align:center;
-  height:100%;
-  width:100%;
-}
 .skill{
   display:grid;
   margin-top:40px;
@@ -144,15 +137,9 @@ html{
   background:#eee;
   align-items:center;
 }
-.sk1,.sk2,.sk3,.sk4,.sk5,.sk6,.sk7,.sk8,i{
-  font-size:40px;
-  font-family: 'Titillium Web';
-}
-.sk1,.sk2,.sk3,.sk4,.sk5,.sk6,.sk7,.sk8, p{
-  font-size:30px;
-}
-.sk1,.sk2,.sk3,.sk4,.sk5,.sk6,.sk7,.sk8{
-  box-shadow:1px 1px 4px 1px goldenrod;
+.skill img{
+  height:100px;
+  width:100%;
 }
 .epskill,.add,.get{
   font-size:2rem;
